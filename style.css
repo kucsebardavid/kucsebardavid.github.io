@@ -1,0 +1,53 @@
+body {
+    background-color: plum;
+    display: block;
+}
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    } 
+
+.menu li {
+    float: left;
+    position: sticky;
+}
+
+.menu li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+   
+}
+
+.menu li a:hover {
+    background-color: silver;
+}
+
+.menu li a.active {
+    background-color: silver;
+}
+
+.carousel-inner img {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: navy;
+}
+
+@media only screen and (max-width: 700px) {
+.menu li {width: 100%;}
+}

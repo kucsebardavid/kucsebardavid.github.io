@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    display: block;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #C81F32;
+    font-weight: bolder;
+}
+
+.menu li a.active {
+    background-color:silver;
+}
+
+.menu li a:hover {
+    background-color: silver;
+}
+
+p.dávid {
+    border-radius: 15px;
+    background-color: orange;
+    text-align: left;
+    color: white;
+    width: fit-content;
+    float: right;
+}
+
+p.luca {
+    border-radius: 15px;
+    background-color: silver;
+    text-align: left;
+    color: black;
+    width: fit-content;
+}
+
+p.fb {
+    border-radius: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #0078FF;
+    border: 2px solid navy;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu li {width: 100%;}
+    }
