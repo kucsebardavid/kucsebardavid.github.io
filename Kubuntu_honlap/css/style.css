@@ -67,10 +67,11 @@ table, th, td {
   }
 
 .screenshot {
-    max-width: 99%;
+    max-width: 80%;
     height: auto;
     margin-right: auto;
     margin-left: auto;
+    display: block;
 }
 
 img.banner {width: 100%}
