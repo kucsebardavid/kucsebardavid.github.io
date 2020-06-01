@@ -1,8 +1,8 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     background-color: #3daae9;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     text-align: center;
 }
