@@ -2,12 +2,12 @@
 
 body {
     background-color: #3daae9;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     color: white;
     text-align: center;
 }
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
