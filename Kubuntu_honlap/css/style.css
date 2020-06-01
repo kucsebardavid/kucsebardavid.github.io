@@ -7,10 +7,11 @@ body {
     text-align: center;
 }
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
+    box-shadow: 8px 8px 10px black;
 }
 
 ul.menu {
@@ -19,9 +20,10 @@ ul.menu {
     padding: 0;
     overflow: hidden;
     background-color: #232629;
-}
+    width: 100%;
+}  
 
-.menu li{
+.menu li {
     float: left;
 }
 
@@ -72,6 +74,10 @@ table, th, td {
     margin-right: auto;
     margin-left: auto;
     display: block;
+    border: #3daae9 solid 4px;
+    border-radius: 10px;
+    box-shadow: 20px 0 10px black;
+    margin-bottom: 20px;
 }
 
 img.banner {width: 100%}
