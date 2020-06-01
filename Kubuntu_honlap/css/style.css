@@ -35,7 +35,7 @@ ul.menu {
     text-align: center;
 }
 
-.menu li a:hover {background-color: #ed1515;}
+.menu li a:hover {background-color: #ed1515; text-transform: uppercase; text-decoration: underline;}
 
 .menu .icon {display: none;}
 
