@@ -56,6 +56,25 @@ ul.menu {
     padding: 0;
 }
 
+table tr td {
+    
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+    
+}
+table {box-shadow: 8px 8px 2px black; width: 220px;}
+
+.playerpic {width: 128px; border-radius: 64px; border: solid 3px white;}
+
+.NE {background-color: #0A2342;}
+
+.KC {background-color: #CA2430;}
+
+.SEA {background-color: #002A5C;}
+
+.NO {background-color: #A08A58;}
+
 @media only screen and (max-width: 700px) {
 .menu li {width: 100%;}
 .carousel-inner img {max-width: 640px; max-height: 360px;}

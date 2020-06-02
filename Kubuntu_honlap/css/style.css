@@ -36,7 +36,6 @@ ul.menu {
 }
 
 .menu li a:hover {background-color: #ed1515; text-transform: uppercase; text-decoration: underline;}
-
 .menu .icon {display: none;}
 
 .active {background-color: #ed1515;}
