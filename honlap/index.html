@@ -9,33 +9,65 @@
   <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/honlap/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/honlap/css/btstyle.css">
 </head>
 
 <body>
-  <ul class="menu">
-    <li><a class="active" href="index.html"><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
-        Kezdőlap</a></li>
-    <li><a href="msgr.html"><i class="fab fa-facebook-messenger" style="color: #0078FF;"></i> Messenger
-        beszélgetések</a></li>
-    <li><a href="galeria.html"><i class="fa fa-photo" aria-hidden="true"></i> Galéria</a></li>
-    <li><a href="kartyak.html">  <i class="fas fa-football-ball    "></i>Kártyák a társashoz</a></li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; color: red;">
+    <a class="navbar-brand" href="index.html">
+      Luca és Dávid <img src="img/1.jpg" style="width: 80px;" alt=""> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active activePage">
+          <a class="nav-link btn btn-dark" href="index.html">Kezdőlap <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> <span class="sr-only">(current)</span></a>
+        </li>
+
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link btn btn-dark" href="msgr.html">Messenger
+            beszélgetések <i class="fab fa-facebook-messenger" style="color: #0078FF;"></i> </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link btn btn-dark" href="galeria.html"> Galéria <i class="fa fa-photo" aria-hidden="true"></i></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-dark" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kártyák a társashoz - Offense <i class="fas fa-football-ball" style="color: brown;" ></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="QB.html"> QB
+              </a>
+            <a class="dropdown-item" href="WR.html"> WR </a>
+            <a class="dropdown-item" href="#">RB</a>
+            <a class="dropdown-item" href="#">TE</a>
+            <a class="dropdown-item" href="#">OL</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
 

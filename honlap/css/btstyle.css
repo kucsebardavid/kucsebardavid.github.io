@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    background-color: plum;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+li.nav-item a.nav-link.btn.btn-dark {color: red; margin: 5px 10px; font-weight: bold;}
+    a.btn.btn-dark {background-color: black; border: none; width: fit-content; height: 99,95px;}
+    a.btn.btn-dark:hover {background-color: silver;}
+    li.nav-item.active a.nav-link.btn.btn-dark {background-color: silver;}
+    li.nav-item.dropdown a.dropdown-item {background-color: black; border: none; color: red;}
+    li.nav-item.dropdown a.dropdown-item:hover {background-color: silver; color: red;}
+    .dropdown-menu {background-color: black;}
+    .dropdown-divider {display: none;}
+
+    .carousel-inner img {
+        display: block;
+        margin: auto;
+        max-width: 960px;
+        max-height: 540px;
+        box-shadow: 20px 20px 10px;
+    }
+    
+    .carousel-caption {
+        background-color: navy;
+        max-height: fit-content;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    table tr td {
+    
+        text-align: center;
+        border-collapse: collapse;
+        color: white;
+        
+    }
+    table {box-shadow: 8px 8px 2px black; width: 220px;}
+    
+    .playerpic {width: 128px; border-radius: 64px; border: solid 3px white;}
+    
+    .NE {background: linear-gradient(#0A2342, #C81F32) ;}
+    
+    .KC {background-color: #CA2430;}
+    
+    .SEA {background: linear-gradient(#002A5C, #7AC142) ;}
+    
+    .NO {background-color: #A08A58;}
+    
+    .BAL {background-color: #241773;}
+    
+    .GB {background-color: #24423C}
+    
+    .ATL {background-color: #A71930;}
+    
+    .HOU {background: linear-gradient(#C9243F, #00143F);}
+    
+    .SF {background: linear-gradient(to bottom right, #C9243F, #C8AA76, black);}
+    
+    .LAC {background-color: #FDB515;}
+    
+    .PHI {background-color: #014A53;}
+    
+    .MIN {background-color: #4F2E84;}
+    
+    .DET {background-color: #046EB4;}
+    
+    .DAL {background-color: #0c264C;}
+    
+    .PIT {background: linear-gradient(#FFC20E, black) ;}
+    
+    .OAK {background: linear-gradient(#C4C9CC, black);}
+    
+    .TEN {background: linear-gradient(#4095D1, #DA2128);}
+    
+    .CAR {background: linear-gradient(black,#0085CA);}
+    
+    .TB {background: linear-gradient(#D40909, #FF7900);}
+    
+    .BUF {background: linear-gradient(to right, #00338D, #C60C30);}
+
+
+    @media only screen and (max-width: 500px) {
+        .menu li {width: 100%;}
+        .carousel-inner img {max-width: 426px; max-height: 240px;}
+        .carousel-caption {display: none;}
+        }

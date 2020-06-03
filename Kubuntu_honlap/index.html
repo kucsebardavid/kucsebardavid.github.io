@@ -1,50 +1,94 @@
 <!doctype html>
 <html lang="hu">
-  <head>
-    <title>Kubuntu.hu - Kezdőoldal</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
-    <script src="generator.js"></script>
-    
+<head>
+  <title>Kubuntu.hu - Kezdőoldal</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/btstyle.css">
+  <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
+  <script src="generator.js"></script>
+
 </head>
-  <body onload="generator()">
-    <header>
-      <img src="img/banner.png" alt="" class="banner">
-      <ul class="menu">
-          <li><a class="active" href="index.html">Kezdőlap <i class="fas fa-home    "></i> </a></li>
-            <li class="dropdown"><a href="ism.html">A Kubunturól <i class="fab fa-ubuntu" style="color: #3daae9;"></i> </a></li>              </li>
-            <li><a href="tip.html">Tippek,trükkök <i class="fas fa-lightbulb" style="color: yellow;"></i> </a></li>
+
+<body>
+  <img src="/Kubuntu_honlap/img/banner.png" alt="" style="width: 100%;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #232629; color: white;">
+    <a class="navbar-brand" href="index.html"><img src="/Kubuntu_honlap/img/Kubuntulogo.png" alt="" style="width: 40px">
+      Kubuntu.hu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active activePage">
+          <a class="nav-link btn btn-dark" href="index.html">Kezdőlap <i class="fas fa-home    "></i><span
+              class="sr-only">(current)</span></a>
+        </li>
+
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link btn btn-dark" href="tips.html">Tippek, trükkök <i class="fas fa-lightbulb    "
+              style="color: yellow;"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-dark" href="ism.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            A Kubunturól <i class="fab fa-ubuntu    " style="color: #3daee9"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ism.html">Általános ismertető, Ubuntu <i class="fab fa-ubuntu    "
+                style="color: #E95420; width: 20px;"></i> </a>
+            <a class="dropdown-item" href="#">Plasma asztali környezet <img src="img/plasmalogo.png"
+                style="width: 20px;" alt=""> </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">KDE szoftverek <img src="img/kdelogo.png" style="width: 20px;" alt=""></a>
+          </div>
+        </li>
       </ul>
-    </header>
-    <h1 style="margin-top: 346px;">Kubuntu.hu</h1>
-    <h2>A magyar Kubuntu honlap</h2>
-<p>
-  Üdvözöllek a honlapon. A Kubuntu nevű Linux <i class="fa fa-linux" aria-hidden="true" style="color: black; font-size: 3em;"></i> disztribúcióról fogok írni.
-  A Kubuntu egy közösségi fejlesztésű és támogatású nyílt forráskódú operációs rendszer, ami <strong style="text-decoration: underline;">ingyenesen</strong> letölthető, használható.
-  A második menüpontban egy általános ismertetőt olvashattok  renszerről, illetve írni fogok a Plasma asztali környezetről és az ehhez tartozó néhány alapértelmezett programról, természetesen képernyőképeket is mellékelek. 
-  A tippek részben pedig olyan cikkeket fogok írni, amelyeket követve saját ízléseteknek megfelelően alakíthatjátok át a Kubuntut. <br>
-  <br>
-  <br>
-</p>
-<p style="text-align: center;">
-  Az alábbi képen pedig a 2020 áprilisában megjelent Kubuntu 20.04 renszerről láttok egy képernyőképet:
+    </div>
+  </nav>
+  <h1>Kubuntu.hu</h1>
+  <h2>A magyar Kubuntu honlap</h2>
+  <p>
+    Üdvözöllek a honlapon. A Kubuntu nevű Linux <i class="fa fa-linux" aria-hidden="true"
+      style="color: black; font-size: 3em;"></i> disztribúcióról fogok írni.
+    A Kubuntu egy közösségi fejlesztésű és támogatású nyílt forráskódú operációs rendszer, ami <strong
+      style="text-decoration: underline;">ingyenesen</strong> letölthető, használható.
+    A második menüpontban egy általános ismertetőt olvashattok renszerről, illetve írni fogok a Plasma asztali
+    környezetről és az ehhez tartozó néhány alapértelmezett programról, természetesen képernyőképeket is mellékelek.
+    A tippek részben pedig olyan cikkeket fogok írni, amelyeket követve saját ízléseteknek megfelelően alakíthatjátok át
+    a Kubuntut. <br>
+    <br>
+    <br>
+  </p>
+  <p style="text-align: center;">
+    Az alábbi képen pedig a 2020 áprilisában megjelent Kubuntu 20.04 renszerről láttok egy képernyőképet:
     <img src="img/focal.png" alt="" class="screenshot">
-</p>
+  </p>
 
-<button onclick="generator()">Katt ide!</button>
-<div id="placeholder"></div>
+  <button onclick="generator()">Katt ide!</button>
+  <div id="placeholder"></div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

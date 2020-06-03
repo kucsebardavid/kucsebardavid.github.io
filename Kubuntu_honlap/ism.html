@@ -8,29 +8,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/btstyle.css">
   <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
 </head>
 
 <body>
-  <header>
-    <img src="img/banner.png" alt="" class="banner">
-    <ul class="menu" id="mymenu">
-      <li><a href="index.html">Kezdőlap <i class="fas fa-home    "></i> </a></li>
-      <li class="active"><a href="ism.html">A Kubunturól <i class="fab fa-ubuntu" style="color: #3daae9;"></i> </a></li>
-      </li>
-      <li><a href="tip.html">Tippek,trükkök <i class="fas fa-lightbulb" style="color: yellow;"></i></a></li>
-    </ul>
-  </header>
-  <p style="text-align: center; padding-bottom: 50px; padding-top: 410px;">
-    <a href="#ubuntu" style="color: white;">Ubuntu</a> <br>
-    <a href="#plasma" style="color: white;">Plasma asztali környezet</a> <br>
-    <a href="" style="color: white;">KDE programok</a>
+  <img src="/Kubuntu_honlap/img/banner.png" alt="" style="width: 100%;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #232629; color: white;">
+    <a class="navbar-brand" href="index.html"><img src="/Kubuntu_honlap/img/Kubuntulogo.png" alt="" style="width: 40px">
+      Kubuntu.hu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  </p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  activePage">
+          <a class="nav-link btn btn-dark" href="index.html">Kezdőlap <i class="fas fa-home    "></i><span
+              class="sr-only">(current)</span></a>
+        </li>
 
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link btn btn-dark" href="tips.html">Tippek, trükkök <i class="fas fa-lightbulb    "
+              style="color: yellow;"></i></a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle btn btn-dark" href="ism.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            A Kubunturól <i class="fab fa-ubuntu    " style="color: #3daee9"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ism.html">Általános ismertető, Ubuntu <i class="fab fa-ubuntu    "
+                style="color: #E95420; width: 20px;"></i> </a>
+            <a class="dropdown-item" href="#">Plasma asztali környezet <img src="img/plasmalogo.png"
+                style="width: 20px;" alt=""> </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">KDE szoftverek <img src="img/kdelogo.png" style="width: 20px;" alt=""></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
   <h1>Mi is a Kubuntu?</h1>
   <p style="text-align: center;">
     Egy olyan Linux disztribúció, amely az Ubuntu alapjait ötvözi a KDE szoftverekkel és a Plasma asztali környezettel.
@@ -55,32 +78,31 @@
     kiadásokat érdemes a mindennapokban használt gépekre felteleptíteni, mert az LTS kiadásokat úgy alkotják meg, hogy
     minél stabilabbak és gyorsabbak legyenek.
   </p>
-  <div>
-    <br>
-    <br>
-    <table>
-      <tr>
+  <div id="tablazat" style="padding-bottom: 50px;">
+
+    <table class="table table-striped table-bordered">
+      <tr style="background-color: #4d4d4d; color: white;">
         <th colspan="4" style="text-align: center;">Jelenleg támogatott kiadások</th>
       </tr>
-      <tr>
+      <tr style="background-color: #4d4d4d; color: white;">
         <th>Kódnév</th>
         <th>Kiadás dátuma</th>
         <th>Támogatás vége</th>
         <th>Ajánlott?</th>
       </tr>
-      <tr>
+      <tr class="table-success">
         <td>Bionic Beaver - 18.04 LTS</td>
         <td>2018. április</td>
         <td>2021. április</td>
         <td style="text-align: center;"><i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i></td>
       </tr>
-      <tr>
+      <tr class="table-danger">
         <td>Eoan Ermine - 19.10</td>
         <td>2019. október</td>
         <td>2020. július</td>
         <td style="text-align: center;"><i class="fa fa-ban" aria-hidden="true" style="color: red;"></i></td>
       </tr>
-      <tr>
+      <tr class="table-success">
         <td>Focal Fossa - 20.04 LTS</td>
         <td>2020. április</td>
         <td>2023. április</td>
@@ -88,19 +110,21 @@
       </tr>
     </table>
   </div>
-  <h2 id="plasma" style="padding-top: 50px;">Plasma asztali környezet</h2>
+  <p>
+    asdad
+  </p>
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
 
