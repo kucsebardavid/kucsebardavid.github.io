@@ -6,39 +6,15 @@ body {
 }
 
 
-ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-} 
-
-.menu li {
-    float: left;
-}
-
-.menu li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-    color: #C81F32;
-    font-weight: bolder;
-}
-
-.menu li a.active {
-    background-color:silver;
-}
-
-.menu li a:hover {
-    background-color: silver;
-}
-
+li.nav-item a.nav-link.btn.btn-dark {color: red; margin: 5px 10px; font-weight: bold;}
+    a.btn.btn-dark {background-color: black; border: none; width: fit-content; height: 99,95px;}
+    a.btn.btn-dark:hover {background-color: silver;}
+    li.nav-item.active a.nav-link.btn.btn-dark {background-color: silver;}
+    li.nav-item.dropdown a.dropdown-item {background-color: black; border: none; color: red;}
+    li.nav-item.dropdown a.dropdown-item:hover {background-color: silver; color: red;}
+    .dropdown-menu {background-color: black;}
+    .dropdown-divider {display: none;}
+    
 p.dávid {
     border-radius: 15px;
     background-color: orange;
