@@ -1,0 +1,11 @@
+html {font-size: 16px;}
+body {background-color: #F1F0F3;}
+.navbar-custom .nav-item.active .nav-link {background-color: #F45145;}
+.navbar-custom .nav-item:hover .nav-link {background-color: #F45145; color: white; text-transform: uppercase;}
+.navbar-custom .nav-item .nav-link {color: white;}
+
+.dropdown-menu.show {background-color: black; }
+.dropdown-menu.show .dropdown-item {color: white; text-align: center;}
+.dropdown-menu.show .dropdown-item:hover {background-color: #F45145;}
+#marketing {background-color: black; color: white;}
+p {text-align: center;}

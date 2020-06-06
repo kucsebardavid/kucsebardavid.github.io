@@ -4,6 +4,7 @@ body {
     display: block;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    font-size: 16px;
 }
 
 li.nav-item a.nav-link.btn.btn-dark {color: red; margin: 5px 10px; font-weight: bold;}
@@ -84,6 +85,8 @@ li.nav-item a.nav-link.btn.btn-dark {color: red; margin: 5px 10px; font-weight: 
     .TB {background: linear-gradient(#D40909, #FF7900);}
     
     .BUF {background: linear-gradient(to right, #00338D, #C60C30);}
+
+    img.card-img-top {height: 495.05px;}
 
 
     @media only screen and (max-width: 500px) {
