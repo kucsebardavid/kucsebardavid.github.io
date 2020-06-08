@@ -80,6 +80,59 @@
         </div>
     </div>
     </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="card">
+                    <div class="card-header" style="background-color: black; color: white;">Számolja ki, mennyibe kerülne igénybe vennie minőségi szolgáltatásainkat!</div>
+                    <div class="form-group">
+                      <label for="">1. Válasszon alapszolgáltatást</label>
+                        <select class="form-control" name="" id="pricePerMonth">
+                          <option value="15000">Egyéni vállalkozó könyvelése - 15.000 Ft/hó</option>
+                          <option value="25000">Bt., Kft. könyvelése - 25.000 Ft/hó</option>
+                          <option value="2500">Alkalmazott bérszámfejtése - 2.500 Ft/hó</option>
+                          <option value="0">Nem veszek igénybe alapszolgáltatást - 0 Ft</option>
+                        </select>
+                        <br>
+                        <label for="">2. Hónapok száma</label>
+                        <select class="form-control" name="" id="months">
+                          <option value="12">Teljes adóév - 12 hónap</option>
+                          <option value="11">11 hónap</option>
+                          <option value="10">10 hónap</option>
+                          <option value="9">9 hónap</option>
+                          <option value="8">8 hónap</option>
+                          <option value="7">7 hónap</option>
+                          <option value="6">6 hónap</option>
+                          <option value="5">5 hónap</option>
+                          <option value="4">4 hónap</option>
+                          <option value="3">3 hónap</option>
+                          <option value="2">2 hónap</option>
+                          <option value="1">1 hónap</option>
+                          <option value="0">0 hónap, mert nem veszek igénybe alapszolgáltatást</option>
+                        </select>
+                        <br>
+                        <label for="">3. Extra szolgáltatások</label>
+                        <select class="form-control" name="" id="extra">
+                            <option value="10000">Beszámolókészítés - 10.000 Ft</option>
+                            <option value="50000">Felszámolás - 50.000 Ft</option>
+                            <option value="80000">Végelszámolás - 80.000 Ft</option>
+                            <option value="0">Nem kérek extra szolgáltatást - 0 Ft</option>
+                        </select>
+                        <br>
+                        <label for="">4. Sürgősségi felár</label>
+                        <select class="form-control" name="" id="urgent">
+                            <option value="20000">Sürgős (1 héten belül) +20.000 Ft</option>
+                            <option value="0">Nem sürgős - 0 Ft</option>
+                        </select>
+                        <p class="lead">A Szolgáltatásaink ára: <span id="amount">0</span> Ft <br>
+                        Kérjük, hogy a pontos összegért keressenek minket az <a href="contact.html">itt</a> található elérhetőségeken. </p>
+                        <button class="btn btn-success" onclick="calc()" style="display: block; margin-left: auto; margin-right: auto;" >Kalkuláció</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -90,6 +143,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
+    <script src="calcamount.js"></script>
 </body>
 
 </html>
