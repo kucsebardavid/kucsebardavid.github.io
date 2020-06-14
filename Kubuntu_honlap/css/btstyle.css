@@ -4,28 +4,28 @@ body {
     color: white;
     text-align: center;
 }
+.navbar-custom {background-color: #4d4d4d;}
+.navbar-custom .nav-item.active .nav-link {background-color: #ed1515;}
+.navbar-custom .nav-item:hover .nav-link {background-color: #ed1515; color: white; text-transform: uppercase;}
+.navbar-custom .nav-item .nav-link {color: white;}
+.navbar-custom {padding-top: 0; padding-bottom: 0;}
+.dropdown-menu.show {background-color: black; }
+.dropdown-menu.show .dropdown-item {color: white; text-align: center;}
+.dropdown-menu.show .dropdown-item:hover {background-color: #ed1515;}
+.navbar-custom .nav-item .nav-link {padding-bottom: 16px; padding-top: 12px; margin-top: 0; margin-bottom: 0;}
 
-a.btn.btn-dark {background-color: #232629; border: none;}
-a.btn.btn-dark:hover {background-color: #ed1515;}
-li.nav-item a.nav-link.btn.btn-dark {color: white}
-li.nav-item.active a.nav-link.btn.btn-dark {background-color: #ed1515;}
-li.nav-item.dropdown a.dropdown-item {background-color: #232629; border: none; color: white;}
-li.nav-item.dropdown a.dropdown-item:hover {background-color: #ed1515; color: white;}
-.dropdown-menu {background-color: #232629;}
-.dropdown-divider {display: none;}
+.jumbotron { background-color: #ed1515;
+            color: white;
+            padding: 10px;
 
-
-h1 {background-color: #4d4d4d;
-    width: 100%;
-    margin: 0;
-    font-size: 3em;
 }
 
-h2 {background-color: #4d4d4d;
-    width: 100%;
-    margin: 0;
-    font-size: 2em;
-}
+.lead {text-align: center;  background-color: #ed1515;}
+
+.card-header {background-color: #ed1515;}
+.card-body { background-color: #4d4d4d;}
+
+h1 {text-align: center;  background-color: #ed1515; color: white;}
 
 p {
     background-color: #4d4d4d;

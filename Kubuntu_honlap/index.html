@@ -11,16 +11,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/btstyle.css">
-  <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
-  <script src="generator.js"></script>
-
 </head>
 
 <body>
   <img src="/Kubuntu_honlap/img/banner.png" alt="" style="width: 100%;">
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #232629; color: white;">
-    <a class="navbar-brand" href="index.html"><img src="/Kubuntu_honlap/img/Kubuntulogo.png" alt="" style="width: 40px">
-      Kubuntu.hu</a>
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-light navbar-custom" style="background-color: #232629;">
+    <a class="navbar-brand" href="index.html">Kubuntu.hu <img src="/Kubuntu_honlap/img/Kubuntulogo.png" alt=""
+        style="width: 40px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,54 +25,65 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active activePage">
-          <a class="nav-link btn btn-dark" href="index.html">Kezdőlap <i class="fas fa-home    "></i><span
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Kezdőlap <i class="fas fa-home fa-lg"></i> <span
               class="sr-only">(current)</span></a>
         </li>
-
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link btn btn-dark" href="tips.html">Tippek, trükkök <i class="fas fa-lightbulb    "
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Tippek, trükkök <i class="fas fa-lightbulb fa-lg    "
               style="color: yellow;"></i></a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" >
           <a class="nav-link dropdown-toggle btn btn-dark" href="ism.html" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            A Kubunturól <i class="fab fa-ubuntu    " style="color: #3daee9"></i>
+            A Kubunturól <i class="fab fa-ubuntu fa-lg" style="color: #3daee9"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="ism.html">Általános ismertető, Ubuntu <i class="fab fa-ubuntu    "
-                style="color: #E95420; width: 20px;"></i> </a>
+            <a class="dropdown-item" href="ism.html">Általános ismertető, Ubuntu <i class="fab fa-ubuntu fa-lg"
+                style="color: #E95420;"></i> </a>
             <a class="dropdown-item" href="#">Plasma asztali környezet <img src="img/plasmalogo.png"
-                style="width: 20px;" alt=""> </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">KDE szoftverek <img src="img/kdelogo.png" style="width: 20px;" alt=""></a>
+                style="width: 1.33em; height: 1.33em;" alt=""> </a>
+            <a class="dropdown-item" href="#">KDE szoftverek <img src="img/kdelogo.png"
+                style="width: 1.33em; height: 1.33em;" alt=""></a>
           </div>
         </li>
       </ul>
     </div>
   </nav>
-  <h1>Kubuntu.hu</h1>
-  <h2>A magyar Kubuntu honlap</h2>
-  <p>
-    Üdvözöllek a honlapon. A Kubuntu nevű Linux <i class="fa fa-linux" aria-hidden="true"
-      style="color: black; font-size: 3em;"></i> disztribúcióról fogok írni.
-    A Kubuntu egy közösségi fejlesztésű és támogatású nyílt forráskódú operációs rendszer, ami <strong
-      style="text-decoration: underline;">ingyenesen</strong> letölthető, használható.
-    A második menüpontban egy általános ismertetőt olvashattok renszerről, illetve írni fogok a Plasma asztali
-    környezetről és az ehhez tartozó néhány alapértelmezett programról, természetesen képernyőképeket is mellékelek.
-    A tippek részben pedig olyan cikkeket fogok írni, amelyeket követve saját ízléseteknek megfelelően alakíthatjátok át
-    a Kubuntut. <br>
-    <br>
-    <br>
-  </p>
-  <p style="text-align: center;">
-    Az alábbi képen pedig a 2020 áprilisában megjelent Kubuntu 20.04 renszerről láttok egy képernyőképet:
-    <img src="img/focal.png" alt="" class="screenshot">
-  </p>
-
-  <button onclick="generator()">Katt ide!</button>
-  <div id="placeholder"></div>
+  <div class="container-fluid">
+    <div class="col-12">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Kubuntu.hu</h1>
+          <p class="lead">A magyar Kubuntu honlap</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h2>Tartalom</h2></div>
+        <div class="card-body">
+          <div class="card-text">
+            <p>
+              Üdvözöllek a honlapon. A Kubuntu nevű Linux <i class="fa fa-linux" aria-hidden="true"
+                style="color: black; font-size: 3em;"></i> disztribúcióról fogok írni.
+              A Kubuntu egy közösségi fejlesztésű és támogatású nyílt forráskódú operációs rendszer, ami <strong
+                style="text-decoration: underline;">ingyenesen</strong> letölthető, használható.
+              A második menüpontban egy általános ismertetőt olvashattok renszerről, illetve írni fogok a Plasma asztali
+              környezetről és az ehhez tartozó néhány alapértelmezett programról, természetesen képernyőképeket is mellékelek.
+              A tippek részben pedig olyan cikkeket fogok írni, amelyeket követve saját ízléseteknek megfelelően
+              alakíthatjátok át
+              a Kubuntut. <br>
+              <br>
+              <br>
+                <p style="text-align: center;">
+                  Az alábbi képen pedig a 2020 áprilisában megjelent Kubuntu 20.04 rendszerről láttok egy képernyőképet:
+                  <img src="img/focal.png" alt="" class="screenshot">
+                </p>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
 
 
   <!-- Optional JavaScript -->
@@ -89,6 +97,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
 </body>
 
 </html>
