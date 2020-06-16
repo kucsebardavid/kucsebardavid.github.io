@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/btstyle.css">
+</head>
+
+<body>
+  <img src="/Kubuntu_honlap/img/banner.png" alt="" style="width: 100%;">
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-light navbar-custom" style="background-color: #232629;">
+    <a class="navbar-brand" href="index.html">Kubuntu.hu <img src="/Kubuntu_honlap/img/Kubuntulogo.png" alt=""
+        style="width: 40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Kezdőlap <i class="fas fa-home fa-lg"></i> <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Tippek, trükkök <i class="fas fa-lightbulb fa-lg    "
+              style="color: yellow;"></i></a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle btn btn-dark" href="ism.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            A Kubunturól <i class="fab fa-ubuntu fa-lg" style="color: #3daee9"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ism.html">Általános ismertető, Ubuntu <i class="fab fa-ubuntu fa-lg"
+                style="color: #E95420;"></i> </a>
+            <a class="dropdown-item active" href="plasma.html">Plasma asztali környezet <img src="img/plasmalogo.png"
+                style="width: 1.33em; height: 1.33em;" alt=""> </a>
+            <a class="dropdown-item" href="#">KDE szoftverek <img src="img/kdelogo.png"
+                style="width: 1.33em; height: 1.33em;" alt=""></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <img id="myImage" src="img/kubuntulaptop.png" style="width: 960px;" alt="" class="img-fluid">
+  <br>
+  <br>
+  <div class="btn-group">
+  <button onclick="document.getElementById('myImage').src='img/kubuntulaptop.png'" type="button" data-toggle="collapse"
+    data-target="#kickoff" aria-expanded="false" aria-controls="kickoff" class="btn btn-primary">Kickoff</button>
+  <button onclick="document.getElementById('myImage').src='img/ertlaptop.png'" type="button" data-toggle="collapse"
+    data-target="#noti" aria-expanded="false" aria-controls="noti" class="btn btn-primary">Értesítések</button>
+  <button onclick="document.getElementById('myImage').src='img/audiolaptop.png'" type="button" data-toggle="collapse"
+    data-target="#audio" aria-expanded="false" aria-controls="audio" class="btn btn-primary">Paneltálca</button>
+  <button onclick="document.getElementById('myImage').src='img/discoverlaptop.png'" type="button" data-toggle="collapse"
+    data-target="#discover" aria-expanded="false" aria-controls="discover" class="btn btn-primary">Discover
+    szoftverközpont</button>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 ">
+
+        <div class="collapse" id="kickoff">
+          <div class="card card-body">
+            The Plasma Launcher lets you quickly and easily launch applications, but it can do much more -- convenient
+            tasks
+            like bookmarking applications, searching for documents as you type, or navigating to common places help you
+            getting straight to the point. With a history of recently started programs and opened files, you can return
+            to
+            where you left off. It even remembers previously entered search terms so you don't have to.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="collapse" id="noti">
+          <div class="card card-body">
+            See active tasks and recent actions; read new e-mails; quickly reply to messages; see track changes or low
+            battery notice; check for updates; interact with recently moved files or screenshots. Or enter "Do Not
+            Disturb" mode to concentrate on your work.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="collapse" id="audio">
+          <div class="card card-body">
+            Connect to your WiFi network; change the volume; switch to the next song or pause a video; access an
+            external device; change the screen layout. All these and a lot more--directly from the system tray.
+
+            To conserve the focus on what you're currently doing, any icon can be hidden if you like. Inactive icons
+            hide themselves unless you tell them to stay where they are.
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="collapse" id="discover">
+          <div class="card card-body">
+
+            Discover lets you manage the applications installed in your computer. Updating, removing or installing an
+            application is only one click away. Supports Flatpak, Snaps and the applications available in your Linux
+            distribution.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c62c376aad.js"></script>
+</body>
+
+</html>
