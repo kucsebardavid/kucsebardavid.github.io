@@ -9,3 +9,4 @@ body {background-color: #F1F0F3;}
 .dropdown-menu.show .dropdown-item:hover {background-color: #F45145;}
 #marketing {background-color: black; color: white;}
 p {text-align: center;}
+.card-header {background-color: black; color: white; text-align: center; font-weight: bold;}
