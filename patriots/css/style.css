@@ -1,0 +1,76 @@
+body {color: white;}
+.navbar-custom {background-color: #002244;}
+.nav-item.active .nav-link {
+    background-color: #C60C30;}
+.navbar.navbar-expand-lg.navbar-dark.navbar-custom {padding-top: 0; padding-bottom: 0;}
+nav .navbar-nav li a{
+    color: white !important;
+    }
+.navbar-custom .nav-item:hover .nav-link {background-color: #ed1515; color: white; text-transform: uppercase;}
+
+table tr td {
+    
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+}
+
+li.nav-item.dropdown a.dropdown-item {background-color: #002244; border: none; color: white;}
+li.nav-item.dropdown a.dropdown-item:hover {background-color:  #B0B7BC; color: #002244;}
+.dropdown-menu {background-color: black;}
+
+table {box-shadow: 8px 8px 2px black; width: 220px;}
+    
+    .playerpic {width: 128px; border-radius: 64px; border: solid 3px white;}
+    
+    .NE {background: linear-gradient(#0A2342, #C81F32) ;}
+    
+    .KC {background-color: #CA2430;}
+    
+    .SEA {background: linear-gradient(#002A5C, #7AC142) ;}
+    
+    .NO {background-color: #A08A58;}
+    
+    .BAL {background-color: #241773;}
+    
+    .GB {background-color: #24423C}
+    
+    .ATL {background-color: #A71930;}
+    
+    .HOU {background: linear-gradient(#C9243F, #00143F);}
+    
+    .SF {background: linear-gradient(to bottom right, #C9243F, #C8AA76, black);}
+    
+    .LAC {background-color: #FDB515;}
+    
+    .PHI {background-color: #014A53;}
+    
+    .MIN {background-color: #4F2E84;}
+    
+    .DET {background-color: #046EB4;}
+    
+    .DAL {background-color: #0c264C;}
+    
+    .PIT {background: linear-gradient(#FFC20E, black) ;}
+    
+    .LAS {background: linear-gradient(#C4C9CC, black);}
+    
+    .TEN {background: linear-gradient(#4095D1, #DA2128);}
+    
+    .CAR {background: linear-gradient(black,#0085CA);}
+    
+    .TB {background: linear-gradient(#D40909, #FF7900);}
+    
+    .BUF {background: linear-gradient(to right, #00338D, #C60C30);}
+
+    .ARI {background: linear-gradient(#97233F, #000000);}
+
+    .CLE {background: linear-gradient(#FF3C00, #311D00);}
+
+    .IND {background: linear-gradient(#002C5F, #A2AAAD);}
+
+    .CIN {background-color: #FB4F14;}
+
+    .CHI {background: linear-gradient(to top right, #0B162A, #C83803) ;}
+
+    .LAR {background: linear-gradient(#003594, #FF8200);}
