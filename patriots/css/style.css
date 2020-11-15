@@ -23,7 +23,7 @@ table {box-shadow: 8px 8px 2px black; width: 220px;}
     
     .playerpic {width: 128px; border-radius: 64px; border: solid 3px white;}
     
-    .NE {background: linear-gradient(#0A2342, #C81F32) ;}
+    .NE {background: linear-gradient(to right,  #0A2342,#B0B7BC, #C81F32) ;}
     
     .KC {background-color: #CA2430;}
     
@@ -75,8 +75,14 @@ table {box-shadow: 8px 8px 2px black; width: 220px;}
 
     .LAR {background: linear-gradient(#003594, #FF8200);}
 
-    .NYG {background: linear-gradient(#0B2265,  #A5ACAF, #A71930);}
+    .NYG {background: linear-gradient(#0B2265,  #A5ACAF);}
 
     .NYJ {background: linear-gradient(#125740, #000000);}
 
     .DEN {background: linear-gradient(#FB4F14, #002244);}
+
+    .WAS {background: linear-gradient(#773141, #FFB612);}
+
+    .JAX {background: linear-gradient(to top,#006778, #101820, #D7A22A);}
+
+    .MIA {background: linear-gradient(#008E97, #FC4C02);}
