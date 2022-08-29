@@ -80,3 +80,12 @@ body {
     margin-top: 7rem;
   }
 }
+
+.navbar .nav-link.active {color: white; text-decoration: underline; background-color: #e31e32;}
+.navbar .navbar-brand {color: white;}
+.navbar .nav-item:hover .nav-link {background-color: #e31e32; color: white;}
+.navbar .nav-item .nav-link {color: white;}
+.navbar {padding-top: 0; padding-bottom: 0;}
+.dropdown-menu.show {background-color: #1f1f4a; }
+.dropdown-menu.show .dropdown-item {color: white; text-align: center;}
+.dropdown-menu.show .dropdown-item:hover {background-color: #e31e32;}
