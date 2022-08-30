@@ -89,3 +89,4 @@ body {
 .dropdown-menu.show {background-color: #1f1f4a; }
 .dropdown-menu.show .dropdown-item {color: white; text-align: center;}
 .dropdown-menu.show .dropdown-item:hover {background-color: #e31e32;}
+.card-header {background-color: #1f1f4a; color: white}
