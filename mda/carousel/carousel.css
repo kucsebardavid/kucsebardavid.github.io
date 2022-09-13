@@ -88,5 +88,6 @@ body {
 .navbar {padding-top: 0; padding-bottom: 0;}
 .dropdown-menu.show {background-color: #1f1f4a; }
 .dropdown-menu.show .dropdown-item {color: white; text-align: center;}
+.dropdown-menu.show .dropdown-item.active {background-color: #e31e32; color: white;}
 .dropdown-menu.show .dropdown-item:hover {background-color: #e31e32;}
 .card-header {background-color: #1f1f4a; color: white}
