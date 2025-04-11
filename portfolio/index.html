@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Csendek és Fények – Vizuális portfólió</title>
+<style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 2rem 1rem 1rem;
+    }
+
+    .section {
+      padding: 1rem 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .image-block {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      transition: transform 0.3s;
+    }
+
+    .image-block img:hover {
+      transform: scale(1.02);
+    }
+
+    .caption {
+      padding: 1rem;
+    }
+
+    .caption h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .caption p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Csendek és Fények</h1>
+<p>Vizuális portfólió – egy nő története a csend, a fény és a test nyelvén</p>
+</header>
+
+<br>
+
+<div class="section">
+<h2>I. Városi intimitás</h2>
+<div class="gallery">
+<div class="image-block">
+<a href="#img3">
+<img alt="Kávé illata a városban" src="DCIM1.jpg"/>
+</a>
+<div class="caption">
+<h3>Kávé illata a városban</h3>
+<p>Csukott szemmel, egy bögre gőzölgő kávé mellett – a reggeli csend és belső figyelem pillanata egy nyüzsgő utcában</p>
+</div>
+</div>
+
+<div class="image-block">
+<a href="#img4">
+<img alt="Virágos terasz csendje" src="DCIM2.jpg"/>
+</a>
+<div class="caption">
+<h3>Virágos terasz csendje</h3>
+<p>A városi zajon túl, virágokkal ölelt reggel, ahol a fény és a színek megnyugvást ígérnek.</p>
+</div>
+</div>
+
+<div class="image-block">
+<a href="#img5">
+<img alt="Napfény és tengerpart" src="DCIM3.jpg"/>
+</a>
+<div class="caption">
+<h3>Napfény és tengerpart</h3>
+<p>A part menti szabadság érzete, ahol a modell tekintete egyszerre figyel és derűs nyitottságot áraszt</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img3" onclick="location.href='#';">
+<img alt="Kávé illata a városban" src="DCIM1.jpg"/>
+</div>
+<div class="lightbox" id="img4" onclick="location.href='#';">
+<img alt="Kávé illata a városban" src="DCIM2.jpg"/>
+</div>
+<div class="lightbox" id="img5" onclick="location.href='#';">
+<img alt="Kávé illata a városban" src="DCIM3.jpg"/>
+</div>
+<br>
+
+
+<div class="section">
+<h2>II. Természet és test</h2>
+<div class="gallery">
+<div class="image-block">
+<a href="#img6">
+<img alt="A fűben, felnézve" src="DCIM4.jpg"/>
+</a>
+<div class="caption">
+<h3>A fűben, felnézve</h3>
+<p>Intim és mégis univerzális pillanat, amikor a test teljes bizalommal olvad bele a természetbe.</p>
+</div>
+</div>
+
+<div class="image-block">
+<a href="#img7">
+<img alt="Tóparti nyugalom" src="DCIM5.jpg"/>
+</a>
+<div class="caption">
+<h3>Tóparti nyugalom</h3>
+<p>Nyitott kompozíció, tiszta fény és nyugalom – a létezés súlytalan pillanata a természet ölelésében.</p>
+</div>
+</div>
+</div>
+
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img6" onclick="location.href='#';">
+<img alt="A fűben, felnézve" src="DCIM4.jpg"/>
+</div>
+<div class="lightbox" id="img7" onclick="location.href='#';">
+<img alt="Tóparti nyugalom" src="DCIM5.jpg"/>
+</div>
+<br>
+</div>
+
+<div class="section">
+<h2>III. Festményből kilépve</h2>
+<div class="gallery">
+<div class="image-block">
+<a href="#img8">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM7.jpg"/>
+</a>
+<div class="caption">
+<h3>Élő portré, klasszikus háttérrel</h3>
+<p>Frontrális nézetben, mint egy reneszánsz festmény újragondolása – időtlen, tiszta tekintet.</p>
+</div>
+</div>
+
+<div class="image-block">
+<a href="#img9">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM8.jpg"/>
+</a>
+<div class="caption">
+<h3>A festett táj lakója</h3>
+<p>Oldalpillantás egy idealizált tájképre, ahol a test és a háttér párbeszédbe lépnek.</p>
+</div>
+</div>
+</div>
+
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img8" onclick="location.href='#';">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM7.jpg"/>
+</div>
+<div class="lightbox" id="img9" onclick="location.href='#';">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM8.jpg"/>
+
+</div>
+
+<div class="section">
+<h2>IV. Fény és test</h2>
+<div class="gallery">
+<div class="image-block">
+<a href="#img10">
+<img alt="Napfény csöndje" src="DCIM9.jpg"/>
+</a>
+<div class="caption">
+<h3>Napfény csöndje</h3>
+<p>Átszűrődő fény, lehunyt szem – ez a test és fény teljes harmóniájának szobra lehetne.</p>
+</div>
+</div>
+
+<div class="image-block">
+<a href="#img11">
+<img alt="Visszatekintés az árnyékból" src="DCIM6.jpg"/>
+</a>
+<div class="caption">
+<h3>Visszatekintés az árnyékból</h3>
+<p>Oldalpóz és fényjáték: az utolsó pillantás, amely már nem kérdez, csak van.</p>
+</div>
+</div>
+
+</div>
+
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img10" onclick="location.href='#';">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM9.jpg"/>
+</div>
+<div class="lightbox" id="img11" onclick="location.href='#';">
+<img alt="Élő portré, klasszikus háttérrel" src="DCIM6.jpg"/>
+
+</div>
+
+<div class="section">
+<h2>V. Víz és jelenlét</h2>
+<div class="gallery">
+<div class="image-block">
+<a href="#img1">
+<img alt="Csend a hegyek vizén" src="DCIM11.jpg"/>
+</a>
+<div class="caption">
+<h3>Csend a hegyek vizén</h3>
+<p>A modell szinte lebeg a víz felszínén, ahol a csend, a víz és az ég összeér – egyensúly és jelenlét pillanata.</p>
+</div>
+</div>
+<div class="image-block">
+<a href="#img2">
+<img alt="Átölelő nyugalom" src="DCIM10.jpg"/>
+</a>
+<div class="caption">
+<h3>Átölelő nyugalom</h3>
+<p>A smaragdzöld tó tükrében a test és a természet közös légzésre talál – a víz a jelenlét meleg ölelése.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img1" onclick="location.href='#';">
+<img alt="Csend a hegyek vizén" src="DCIM11.jpg"/>
+</div>
+<div class="lightbox" id="img2" onclick="location.href='#';">
+<img alt="Átölelő nyugalom" src="DCIM10.jpg"/>
+</div>
+</body>
+</html>
