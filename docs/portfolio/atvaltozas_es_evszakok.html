@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Csendek és Fények – Vizuális portfólió</title>
+<style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff1e6;
+      color: #222;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 2rem 1rem 1rem;
+    }
+
+    .section {
+      padding: 1rem 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+    }
+
+     .image-block {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #ddd; /* finom keret */
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      margin: 12px;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+    }
+
+    .image-block img:hover {
+      transform: scale(1.02);
+    }
+
+    .caption {
+      padding: 1rem;
+    }
+
+    .caption h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .caption p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+   nav {
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  white-space: normal;
+  max-width: 200px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      width: 100%;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Főoldal</a>
+    <a href="muveszet_es_reflexio.html">Művészet és reflexió</a>
+    <a href="varosi_terek.html">Városi terek</a>
+    <a href="termeszet_es_elemek.html">Természet és elemek</a>
+    <a href="intim_terek_es_figyelem.html">Intim terek és figyelem</a>
+    <a href="tarsadalmi_terek.html">Társadalmi terek</a>
+  </nav>
+
+  <header>
+    <h1>Átváltozás / Évszakok</h1>
+    <p>Idő és ritmus, ciklus és elmúlás – ezek a képek a természet változását idézik meg, miközben a test is átváltozásokon megy keresztül. A színek, a fények és a mozdulatok nemcsak a tájra, hanem a test és az évszakok viszonyára is reflektálnak. A jelenlét itt mindig időhöz kötött – és ezzel együtt örök.</p>
+  </header>
+
+  <div class="section">
+<h2 id="chapter8">VIII. Átváltozás – Zöldtől Aranyig</h2><p>Az évszakok nyoma a bőrön, a lomb színváltása a test mozdulatában él tovább. Ez a fejezet az átlényegülésé, ahol a természet ciklikus ritmusa a modell arcán és gesztusain tükröződik vissza.</p>
+<div class="gallery">
+<div class="image-block">
+<a href="#img18">
+<img alt="Tavasz kezében" src="DCIM16.jpg"/>
+</a>
+<div class="caption">
+<h3>Tavasz kezében</h3>
+<p>A modell tenyerében egy friss hajtás, körülötte életre kelt a tavasz. Ez a pillanat a megújulás reményét hordozza.</p>
+</div>
+</div>
+<div class="image-block">
+<a href="#img19">
+<img alt="Az ősz aranya" src="DCIM17.jpg"/>
+</a>
+<div class="caption">
+<h3>Az ősz aranya</h3>
+<p>Ugyanazzal a mozdulattal, de immár őszi levéllel, a modell tekintete és a háttér meleg tónusai az elmúlás szépségét idézik.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img18" onclick="this.style.display='none'; return false;">
+<img alt="Tavasz kezében" src="DCIM16.jpg"/>
+</div>
+<div class="lightbox" id="img19" onclick="this.style.display='none'; return false;">
+<img alt="Az ősz aranya" src="DCIM17.jpg"/>
+</div>
+<div class="section">
+<h2 id="chapter9">IX. Az évszakok útja</h2><p>Ez a sorozat nemcsak a környezet változásáról szól, hanem a test mint idő-jelenség szerepéről. A mozdulatlan forma és a mozgó évszakok találkozása egy érzéki idővonalat rajzol fel.</p>
+<div class="gallery">
+<div class="image-block">
+<a href="#img20">
+<img alt="Árnyék és fény játéka" src="DCIM18.jpg"/>
+</a>
+<div class="caption">
+<h3>Árnyék és fény játéka</h3>
+<p>A modell egy takaróra ülve, tekintete elgondolkodó – a levelek színei és a textíliák puhasága az ősz ölelését idézik.</p>
+</div>
+</div>
+<div class="image-block">
+<a href="#img21">
+<img alt="Egyetlen pillanatban" src="DCIM19.jpg"/>
+</a>
+<div class="caption">
+<h3>Egyetlen pillanatban</h3>
+<p>A test és az ősz találkozása koncentrált jelenlétté válik – a lehullott levél és a modell szinte megragadja az időt.</p>
+</div>
+</div>
+<div class="image-block">
+<a href="#img22">
+<img alt="A föld szőnyege" src="DCIM20.jpg"/>
+</a>
+<div class="caption">
+<h3>A föld szőnyege</h3>
+<p>A modell hason fekve tekint ránk – a falevelek között, mintha maga is a természet része lenne. Egyesülés az évszak leheletével.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Lightbox overlays -->
+<div class="lightbox" id="img20" onclick="this.style.display='none'; return false;">
+<img alt="Árnyék és fény játéka" src="DCIM18.jpg"/>
+</div>
+<div class="lightbox" id="img21" onclick="this.style.display='none'; return false;">
+<img alt="Egyetlen pillanatban" src="DCIM19.jpg"/>
+</div>
+<div class="lightbox" id="img22" onclick="this.style.display='none'; return false;">
+<img alt="A föld szőnyege" src="DCIM20.jpg"/>
+</div>
+</body>
+</html>
