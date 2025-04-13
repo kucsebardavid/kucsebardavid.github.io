@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Test és Tér – Főoldal</title>
+<style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff1e6;
+      color: #222;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-block {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 1rem;
+      font-weight: bold;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .image-block a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+     .modal-btn {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.8rem 1.5rem;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .modal-close {
+      float: right;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+  
+
+nav {
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  white-space: normal;
+  max-width: 200px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      width: 100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+<nav>
+<a href="muveszet_es_reflexio.html">Művészet és reflexió</a>
+<a href="varosi_terek.html">Városi terek</a>
+<a href="termeszet_es_elemek.html">Természet és elemek</a>
+<a href="intim_terek_es_figyelem.html">Intim terek és belső figyelem</a>
+<a href="tarsadalmi_terek.html">Társadalmi terek</a>
+<a href="atvaltozas_es_evszakok.html">Átváltozás / Évszakok</a>
+<a href="#" onclick="document.getElementById('modal').style.display='block'">A portfólió története</a>
+</nav>
+<header>
+<h1>Test és Tér</h1>
+<h2>„Vizuális portfólió a test jelenlétéről, környezetéről és az érzékelt tér narratíváiról”</h2>
+</header>
+<button class="modal-btn" onclick="document.getElementById('modal').style.display='block'">Háttértörténet megtekintése</button>
+<div class="modal" id="modal">
+<div class="modal-content">
+<span class="modal-close" onclick="document.getElementById('modal').style.display='none'">×</span>
+<h2>A képek mögött – Egy portfólió története</h2>
+<h3>1. Miért pont mesterséges intelligencia?</h3>
+<p>Az ötlet megszületésekor még nem volt kezemben sem profi fényképezőgép, sem stúdiófelszerelés, sem olyan modell, akivel együtt dolgozhattam volna. A képek viszont már régóta megszülettek a fejemben: jelenetek egy test és egy tér kapcsolatáról, pillanatok, amelyek egyszerre személyesek, mégis ismerősek.</p>
+<p>Az alkotói vágy megvolt – a technikai eszközök hiányoztak. Ekkor fordultam a mesterséges intelligenciához. Nem azért, mert egyszerűbb lett volna, hanem mert az volt az egyetlen eszköz, amivel a fejemben lévő világot képpé tudtam alakítani. Az MI nem kiváltotta a fotózást, hanem lehetővé tette.</p>
+<h3>2. A határvonal – test, intimitás és a technológia érzékenysége</h3>
+<p>A portfólió alapvetése a test jelenléte, az intimitás vizuális megtapasztalása. Nem szexualitásról szól, hanem a test és a tér kapcsolatáról, arról, hogyan létezik egy emberi test különböző környezetekben – természetben, városban, könyvtárban, irodában.</p>
+<p>Az első próbálkozások során azonban az MI minden olyan promptot elutasított, ahol topless vagy meztelen női test szerepelt. Még akkor is, ha a leírásban nyugodt, kontemplatív, sőt esztétikai kontextusban szerepelt. Úgy tűnt, hogy a rendszer nem tud különbséget tenni a provokatív tartalom és a természetes testábrázolás között – és automatikusan letiltotta a képgenerálást.</p>
+<h3>3. Az áttörés pillanata – napfény és félreértett szándék</h3>
+<p>A fordulat egy meglepően egyszerű jelenetnél következett be. Egy nőt képzeltem el, aki topless napozik egy park félreeső padján. A promptban nem szerepelt semmi provokatív: „a nő csukott szemmel, nyugodtan pihen a napon”. A fény, a test és a tér összhangját szerettem volna megmutatni.</p>
+<p>És ezúttal: a rendszer elfogadta. Megszületett az első kép. Ez volt az áttörés.</p>
+<p>Miért engedte most? Valószínűleg a prompt szövegének tónusa, a jelenet természetessége és az esztétikai fókusz együttese „meggyőzte” a rendszert arról, hogy ez nem tiltott tartalom. A gép – a maga statisztikai mintái szerint – értelmezte a szándékot, és engedte, hogy megszülessen a kép.</p>
+<h3>4. Hogyan működik az MI valójában? – avagy a szabály nem mindig szabály</h3>
+<p>A mesterséges intelligencia nem fix szabályok alapján dolgozik. A képgeneráló algoritmus a szavak mögötti mintázatokat értelmezi, és ez alapján próbálja megalkotni a képet. Néha egészen pontosan, máskor egészen máshogy, mint azt az ember várná.</p>
+<p>Van, amikor ugyanazt a promptot elfogadja, máskor visszautasítja. Ez nem tudatos döntés, hanem a rendszer valószínűségi logikájának következménye. Ezt a működésmódot megérteni és elfogadni idő kellett – de közben egyre jobban beleláttam, hogyan gondolkodik egy MI, és hogyan tudok vele „tárgyalni”.</p>
+<h3>5. Együttműködés – társalkotás egy nem emberi alkotótárssal</h3>
+<p>Az áttörés után már nem volt kérdés: lehet ezzel a rendszerrel dolgozni – csak meg kell tanulni beszélni vele. Megkértem valamire, újraírattam vele egy jelenetet, módosítottam egy apró részletet, és figyeltem, hogyan reagál. Egy idő után már nem technikai eszközként, hanem alkotótársként tekintettem az MI-re.</p>
+<p>A képek, amelyek végül a portfólióba kerültek, mind ebből az együttműködésből születtek. Olykor kompromisszummal, máskor tökéletes egyetértésben. De mindegyik kép egy kérdésre válaszolt: hogyan jelenik meg a test a térben, és mit jelent az, ha ezt egy olyan rendszer alkotja meg, amely soha nem látott még testet a maga valóságában?</p>
+</div>
+</div>
+<section class="gallery">
+<div class="image-block"><a href="muveszet_es_reflexio.html"><img src="DCIM8.jpg"/><div class="caption">Művészet és reflexió</div></a></div>
+<div class="image-block"><a href="muveszet_es_reflexio.html"><img src="DCIM24.jpg"/><div class="caption">Művészet és reflexió</div></a></div>
+<div class="image-block"><a href="muveszet_es_reflexio.html"><img src="DCIM25.jpg"/><div class="caption">Művészet és reflexió</div></a></div>
+<div class="image-block"><a href="muveszet_es_reflexio.html"><img src="DCIM31.jpg"/><div class="caption">Művészet és reflexió</div></a></div>
+<div class="image-block"><a href="varosi_terek.html"><img src="DCIM1.jpg"/><div class="caption">Városi terek</div></a></div>
+<div class="image-block"><a href="varosi_terek.html"><img src="DCIM21.jpg"/><div class="caption">Városi terek</div></a></div>
+<div class="image-block"><a href="termeszet_es_elemek.html"><img src="DCIM10.jpg"/><div class="caption">Természet és elemek</div></a></div>
+<div class="image-block"><a href="termeszet_es_elemek.html"><img src="DCIM14.jpg"/><div class="caption">Természet és elemek</div></a></div>
+<div class="image-block"><a href="intim_terek_es_figyelem.html"><img src="DCIM33.jpg"/><div class="caption">Intim terek és belső figyelem</div></a></div>
+<div class="image-block"><a href="intim_terek_es_figyelem.html"><img src="DCIM35.jpg"/><div class="caption">Intim terek és belső figyelem</div></a></div>
+<div class="image-block"><a href="intim_terek_es_figyelem.html"><img src="DCIM52.jpg"/><div class="caption">Intim terek és belső figyelem</div></a></div>
+<div class="image-block"><a href="tarsadalmi_terek.html"><img src="DCIM47.jpg"/><div class="caption">Társadalmi terek</div></a></div>
+<div class="image-block"><a href="tarsadalmi_terek.html"><img src="DCIM55.jpg"/><div class="caption">Társadalmi terek</div></a></div>
+<div class="image-block"><a href="atvaltozas_es_evszakok.html"><img src="DCIM16.jpg"/><div class="caption">Átváltozás / Évszakok</div></a></div>
+<div class="image-block"><a href="atvaltozas_es_evszakok.html"><img src="DCIM17.jpg"/><div class="caption">Átváltozás / Évszakok</div></a></div>
+</section>
+</body>
+</html>
